@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\bin\Debug\QLNS.exe.config
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\bin\Debug\QLNS.exe
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\bin\Debug\QLNS.pdb
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.exe
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.pdb
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.frmDangKy.resources
+C:\Users\Admin\Documents\GitHub\QLNS\QLNS\obj\Debug\QLNS.frmDangNhap.resources

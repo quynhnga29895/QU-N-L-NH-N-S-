@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLNS", "QLNS\QLNS.csproj", "{15EB241B-EDE5-49BD-A233-249E67566CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{1C13A88B-DFD0-4A3C-AA54-E8CFA10C6BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{53D21214-6171-46AA-88C6-9383C242868D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15EB241B-EDE5-49BD-A233-249E67566CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EB241B-EDE5-49BD-A233-249E67566CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EB241B-EDE5-49BD-A233-249E67566CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EB241B-EDE5-49BD-A233-249E67566CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C13A88B-DFD0-4A3C-AA54-E8CFA10C6BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C13A88B-DFD0-4A3C-AA54-E8CFA10C6BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C13A88B-DFD0-4A3C-AA54-E8CFA10C6BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C13A88B-DFD0-4A3C-AA54-E8CFA10C6BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D21214-6171-46AA-88C6-9383C242868D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D21214-6171-46AA-88C6-9383C242868D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D21214-6171-46AA-88C6-9383C242868D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D21214-6171-46AA-88C6-9383C242868D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
