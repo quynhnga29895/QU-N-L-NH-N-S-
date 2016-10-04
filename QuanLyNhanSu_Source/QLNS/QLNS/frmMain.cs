@@ -16,5 +16,17 @@ namespace QLNS
         {
             InitializeComponent();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qUANLYNHANSUDataSet.tblNhanVien' table. You can move, or remove it, as needed.
+            this.tblNhanVienTableAdapter.Fill(this.qUANLYNHANSUDataSet.tblNhanVien);
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }

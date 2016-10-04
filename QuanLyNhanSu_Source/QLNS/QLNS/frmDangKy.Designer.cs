@@ -92,6 +92,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 20);
             this.textBox2.TabIndex = 5;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // textBox3
             // 
@@ -99,6 +100,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 20);
             this.textBox3.TabIndex = 6;
+            this.textBox3.UseSystemPasswordChar = true;
             // 
             // btnOK
             // 
