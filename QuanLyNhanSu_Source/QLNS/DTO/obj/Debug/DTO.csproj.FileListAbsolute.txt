@@ -3,3 +3,7 @@ C:\Users\Admin\Documents\GitHub\QLNS\DTO\bin\Debug\DTO.pdb
 C:\Users\Admin\Documents\GitHub\QLNS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\QLNS\DTO\obj\Debug\DTO.dll
 C:\Users\Admin\Documents\GitHub\QLNS\DTO\obj\Debug\DTO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\obj\Debug\DTO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\obj\Debug\DTO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DTO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DTO.pdb

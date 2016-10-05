@@ -19,3 +19,8 @@ C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\ob
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmMain.resources
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\bin\Debug\DAO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\bin\Debug\DTO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\bin\Debug\DAO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\bin\Debug\DTO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmMain1.resources

@@ -1,6 +1,6 @@
 ﻿namespace QLNS
 {
-    partial class frmMain
+    partial class frmMain1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain1));
             this.qUANLYNHANSUDataSet = new QLNS.QUANLYNHANSUDataSet();
             this.tblNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblNhanVienTableAdapter = new QLNS.QUANLYNHANSUDataSetTableAdapters.tblNhanVienTableAdapter();

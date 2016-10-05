@@ -20,12 +20,12 @@ namespace DAO
             return dt;
         }
 
-        public static bool Them()
+        public static bool Sua(TaiKhoan_DTO tk)
         {
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblPhongBan(MaPB,TenPB) values ('{0}','{1}')", pb.MaPB, pb.TenPB);
+                string sTruyVan = string.Format("Update tblTaiKhoan set UserName = '{0}',Password = '{1}' ",tk.UserName,tk.Password);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -35,13 +35,12 @@ namespace DAO
                 return false;
             }
         }
-
-        public static bool Sua(PhongBan_DTO pb)
+        public static bool Xoa(TaiKhoan_DTO tk)
         {
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Update tblPhongBan set TenPB = '{0}',DiaDiem = '{1}',SDT = '{2}' where MaPB = '{4}'", pb.TenPB, pb.DiaDiem, pb.SDT, pb.MaPB);
+                string sTruyVan = string.Format("Delete from tblKhenThuong where UserName = '{0}'", tk.UserName);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -51,12 +50,12 @@ namespace DAO
                 return false;
             }
         }
-        public static bool Xoa(PhongBan_DTO pb)
+        public static bool Them(TaiKhoan_DTO tk) 
         {
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Delete from tblPhongBan where MaPB = '{0}'", pb.MaPB);
+                string sTruyVan = string.Format("Insert into tblKhenThuong values (UserName,Password,MaNV,MaPQ) values ('{0}','{1}','{2}',{3})", tk.UserName,tk.Password,tk.MaNV,tk.MaPQ);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -66,6 +65,5 @@ namespace DAO
                 return false;
             }
         }
-
     }
 }

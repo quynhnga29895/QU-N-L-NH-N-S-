@@ -1,0 +1,7 @@
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DAO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DAO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.dll
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.pdb
+C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
