@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,9 +40,16 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbMaNV = new System.Windows.Forms.ComboBox();
+            this.tblNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qUANLYNHANSUDataSet = new QLNS.QUANLYNHANSUDataSet();
             this.lbThongBao = new System.Windows.Forms.Label();
-            this.dtTimeNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.tblNhanVienTableAdapter = new QLNS.QUANLYNHANSUDataSetTableAdapters.tblNhanVienTableAdapter();
+            this.tblNhanVienBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,16 +88,16 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(27, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 15);
+            this.label4.Size = new System.Drawing.Size(42, 15);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Ngày Sinh";
+            this.label4.Text = "MaNV";
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.Location = new System.Drawing.Point(169, 48);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(233, 22);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(192, 22);
             this.txtTenDangNhap.TabIndex = 4;
             // 
             // txtMatKhau
@@ -97,7 +105,7 @@
             this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(169, 95);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(233, 22);
+            this.txtMatKhau.Size = new System.Drawing.Size(192, 22);
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -106,24 +114,25 @@
             this.txtNhapLaiPass.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNhapLaiPass.Location = new System.Drawing.Point(169, 141);
             this.txtNhapLaiPass.Name = "txtNhapLaiPass";
-            this.txtNhapLaiPass.Size = new System.Drawing.Size(233, 22);
+            this.txtNhapLaiPass.Size = new System.Drawing.Size(192, 22);
             this.txtNhapLaiPass.TabIndex = 6;
             this.txtNhapLaiPass.UseSystemPasswordChar = true;
             // 
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(73, 302);
+            this.btnOK.Location = new System.Drawing.Point(34, 292);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(87, 38);
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(239, 302);
+            this.btnCancel.Location = new System.Drawing.Point(183, 292);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(87, 38);
             this.btnCancel.TabIndex = 9;
@@ -133,7 +142,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(406, 302);
+            this.btnThoat.Location = new System.Drawing.Point(353, 292);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(87, 38);
             this.btnThoat.TabIndex = 10;
@@ -144,8 +153,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox1.Controls.Add(this.cbMaNV);
             this.groupBox1.Controls.Add(this.lbThongBao);
-            this.groupBox1.Controls.Add(this.dtTimeNgaySinh);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtTenDangNhap);
             this.groupBox1.Controls.Add(this.label2);
@@ -156,13 +165,33 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox1.Location = new System.Drawing.Point(73, 40);
+            this.groupBox1.Location = new System.Drawing.Point(35, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(461, 256);
+            this.groupBox1.Size = new System.Drawing.Size(432, 255);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đăng Ký Tài Khoản";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cbMaNV
+            // 
+            this.cbMaNV.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tblNhanVienBindingSource, "MaNV", true));
+            this.cbMaNV.DisplayMember = "MaNV";
+            this.cbMaNV.Location = new System.Drawing.Point(169, 193);
+            this.cbMaNV.Name = "cbMaNV";
+            this.cbMaNV.Size = new System.Drawing.Size(192, 23);
+            this.cbMaNV.TabIndex = 0;
+            this.cbMaNV.ValueMember = "MaNV";
+            // 
+            // tblNhanVienBindingSource
+            // 
+            this.tblNhanVienBindingSource.DataMember = "tblNhanVien";
+            this.tblNhanVienBindingSource.DataSource = this.qUANLYNHANSUDataSet;
+            // 
+            // qUANLYNHANSUDataSet
+            // 
+            this.qUANLYNHANSUDataSet.DataSetName = "QUANLYNHANSUDataSet";
+            this.qUANLYNHANSUDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lbThongBao
             // 
@@ -174,20 +203,21 @@
             this.lbThongBao.TabIndex = 8;
             this.lbThongBao.Text = ".";
             // 
-            // dtTimeNgaySinh
+            // tblNhanVienTableAdapter
             // 
-            this.dtTimeNgaySinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtTimeNgaySinh.Location = new System.Drawing.Point(169, 187);
-            this.dtTimeNgaySinh.Name = "dtTimeNgaySinh";
-            this.dtTimeNgaySinh.Size = new System.Drawing.Size(233, 22);
-            this.dtTimeNgaySinh.TabIndex = 7;
+            this.tblNhanVienTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblNhanVienBindingSource1
+            // 
+            this.tblNhanVienBindingSource1.DataMember = "tblNhanVien";
+            this.tblNhanVienBindingSource1.DataSource = this.qUANLYNHANSUDataSet;
             // 
             // frmDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(595, 373);
+            this.ClientSize = new System.Drawing.Size(529, 347);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnCancel);
@@ -195,8 +225,14 @@
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmDangKy";
             this.Text = "ĐĂNG KÝ TÀI KHOẢN";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDangKy_FormClosed);
+            this.Load += new System.EventHandler(this.frmDangKy_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDangKy_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,7 +250,11 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dtTimeNgaySinh;
         private System.Windows.Forms.Label lbThongBao;
+        private System.Windows.Forms.ComboBox cbMaNV;
+        private QUANLYNHANSUDataSet qUANLYNHANSUDataSet;
+        private System.Windows.Forms.BindingSource tblNhanVienBindingSource;
+        private QUANLYNHANSUDataSetTableAdapters.tblNhanVienTableAdapter tblNhanVienTableAdapter;
+        private System.Windows.Forms.BindingSource tblNhanVienBindingSource1;
     }
 }

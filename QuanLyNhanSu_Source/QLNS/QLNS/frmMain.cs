@@ -10,23 +10,26 @@ using System.Windows.Forms;
 
 namespace QLNS
 {
-    public partial class frmMain1 : Form
+    public partial class frmMain : Form
     {
-        public frmMain1()
+        public frmMain()
         {
             InitializeComponent();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qUANLYNHANSUDataSet.tblNhanVien' table. You can move, or remove it, as needed.
-            this.tblNhanVienTableAdapter.Fill(this.qUANLYNHANSUDataSet.tblNhanVien);
 
         }
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
 
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

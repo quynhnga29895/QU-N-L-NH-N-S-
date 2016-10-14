@@ -45,17 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangKy.Designer.cs">
+      <DependentUpon>frmDangKy.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDangKy.cs">
+    <Compile Include="frmDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDangKy.Designer.cs">
-      <DependentUpon>frmDangKy.cs</DependentUpon>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -70,11 +76,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUANLYNHANSUDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QUANLYNHANSUDataSet_tblNhanVien1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYNHANSUDataSet_tblNhanVien1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmDangKy.resx">
       <DependentUpon>frmDangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -108,6 +122,17 @@
     <None Include="QUANLYNHANSUDataSet.xss">
       <DependentUpon>QUANLYNHANSUDataSet.xsd</DependentUpon>
     </None>
+    <None Include="QUANLYNHANSUDataSet_tblNhanVien1.xsc">
+      <DependentUpon>QUANLYNHANSUDataSet_tblNhanVien1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYNHANSUDataSet_tblNhanVien1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYNHANSUDataSet_tblNhanVien1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYNHANSUDataSet_tblNhanVien1.xss">
+      <DependentUpon>QUANLYNHANSUDataSet_tblNhanVien1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -119,6 +144,10 @@
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{1c13a88b-dfd0-4a3c-aa54-e8cfa10c6bfd}</Project>
       <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{53d21214-6171-46aa-88c6-9383c242868d}</Project>
+      <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

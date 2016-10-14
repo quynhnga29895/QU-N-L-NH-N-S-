@@ -7,79 +7,67 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using DAO;
+using DTO;
 namespace QLNS
 {
     public partial class frmDangNhap : Form
     {
-        public static string MaNV;
-        public static string UserName;
-        public static string Password;
-        private SqlConnection conn;
         public frmDangNhap()
         {
             InitializeComponent();
         }
 
+        private void frmDangNhap_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            frmDangKy dk = new frmDangKy();
+            dk.Show();
+        }
+
+        private void chkBoxHienThi_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHienThi.Checked == true)
+            {
+                txtMatKhau.UseSystemPasswordChar = false;
+            }
+            else
+                txtMatKhau.UseSystemPasswordChar = true;
+        }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
-            traloi = MessageBox.Show("Bạn muốn thoát?","Thông Báo", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            traloi = MessageBox.Show("Bạn có muốn thoát???", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (traloi == DialogResult.OK) Application.Exit();
-            
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (txtuser.Text != "")
+            if (txtUser.Text == ""||txtMatKhau.Text=="")
             {
-                string command = string.Format("select * from tblTaiKhoan where UserName = '{0}'", txtuser.Text);
-                SqlDataAdapter sda = new SqlDataAdapter(command, conn);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows.Count == 0)
-                {
-                    //MessageBox.Show("Sai tên tài kho?n");
-                    lbThongBao.Text = "Sai tài Khoản!!!";
-                }
-                else if (dt.Rows[0][1].ToString().Trim() != txtpass.Text)
-                {
-                    // MessageBox.Show("Sai tên m?t kh?u ");
-                    lbThongBao.Text = "Sai mật khẩu!!!";
-                }
-                else
-                {
-                    MaNV = dt.Rows[0][2].ToString();
-                    UserName = txtuser.Text;
-                    Password = txtpass.Text;
-                    frmMain1 frm = new frmMain1();
-                    frm.Show();
-                    this.Hide();
-                }
+                lbThongBao.Text = "Bạn chưa nhập đủ thông tin!!!";
+                return;
+            }
+            else if (TaiKhoan_DAO.DangNhap(txtUser.Text, txtMatKhau.Text) == false)
+            {
+                lbThongBao.Text = "Tên đăng nhập hoặc mật khẩu không đúng !!!";
+                return;
             }
             else
             {
-                lbThongBao.Text = "Bạn chưa nhập dữ liệu!!!";
+                this.Hide();
+                frmMain main = new frmMain();
+                main.Show();
             }
         }
 
-        private void frmDangNhap_Load(object sender, EventArgs e)
-        {
-            conn = DataProvider.KetNoi();
-        }
-
-        private void checBox_hienthi_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkHienThi.Checked == true)
-            {
-                txtpass.UseSystemPasswordChar = false;
-            }
-            else
-                txtpass.UseSystemPasswordChar = true;
-        }
-
-        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        private void frmDangNhap_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -87,12 +75,11 @@ namespace QLNS
             }
         }
 
-        private void linklable_dangky_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lkLabelQuenPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmDangNhap frm = new frmDangNhap();
-            frm.Close();
-            frmDangKy frm1 = new frmDangKy();
-            frm1.Show();
+            this.Hide();
+            frmDoiMatKhau frm = new frmDoiMatKhau();
+            frm.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace QLNS
 {
-    partial class frmMain1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain1));
-            this.qUANLYNHANSUDataSet = new QLNS.QUANLYNHANSUDataSet();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tblNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblNhanVienTableAdapter = new QLNS.QUANLYNHANSUDataSetTableAdapters.tblNhanVienTableAdapter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,26 +69,11 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // qUANLYNHANSUDataSet
-            // 
-            this.qUANLYNHANSUDataSet.DataSetName = "QUANLYNHANSUDataSet";
-            this.qUANLYNHANSUDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblNhanVienBindingSource
-            // 
-            this.tblNhanVienBindingSource.DataMember = "tblNhanVien";
-            this.tblNhanVienBindingSource.DataSource = this.qUANLYNHANSUDataSet;
-            // 
-            // tblNhanVienTableAdapter
-            // 
-            this.tblNhanVienTableAdapter.ClearBeforeFill = true;
             // 
             // menuStrip1
             // 
@@ -420,8 +403,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "frmMain";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -435,9 +418,7 @@
 
         #endregion
 
-        private QUANLYNHANSUDataSet qUANLYNHANSUDataSet;
         private System.Windows.Forms.BindingSource tblNhanVienBindingSource;
-        private QUANLYNHANSUDataSetTableAdapters.tblNhanVienTableAdapter tblNhanVienTableAdapter;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem hệThôngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem côngCụToolStripMenuItem;

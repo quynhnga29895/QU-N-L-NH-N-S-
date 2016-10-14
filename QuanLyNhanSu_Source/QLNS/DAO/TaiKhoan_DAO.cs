@@ -25,7 +25,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Update tblTaiKhoan set UserName = '{0}',Password = '{1}' ",tk.UserName,tk.Password);
+                string sTruyVan = string.Format("Update tblTaiKhoan set Password = '{0}' where UserName = '{1}' ",tk.Password,tk.UserName);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -40,7 +40,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Delete from tblKhenThuong where UserName = '{0}'", tk.UserName);
+                string sTruyVan = string.Format("Delete from tblTaiKhoan where UserName = '{0}'", tk.UserName);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -55,9 +55,54 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblKhenThuong values (UserName,Password,MaNV,MaPQ) values ('{0}','{1}','{2}',{3})", tk.UserName,tk.Password,tk.MaNV,tk.MaPQ);
+                string sTruyVan = string.Format("Insert into tblTaiKhoan (UserName,Password,MaNV,MaPQ) values ('{0}','{1}','{2}',{3})", tk.UserName,tk.Password,tk.MaNV,tk.MaPQ);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static bool KiemTra(string user)
+        {
+            try
+            {
+                con = DataProvider.KetNoi();
+                string sTruyVan = string.Format("Select UserName from tblTaiKhoan where UserName = '{0}'",user);
+                DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
+                if (dt.Rows.Count < 0) return false;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static bool DangNhap(string user, string pass)
+        {
+            try
+            {
+                con = DataProvider.KetNoi();
+                string sTruyVan = string.Format("Select UserName,Password from tblTaiKhoan where UserName = '{0}'and Password = '{1}'", user, pass);
+                DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
+                if (dt.Rows.Count <= 0) return false;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static bool DoiMatKhau(string user)
+        {
+            try
+            {
+                con = DataProvider.KetNoi();
+                string sTruyVan = string.Format("Select UserName from tblTaiKhoan where UserName = '{0}'", user);
+                DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
+                if (dt.Rows.Count <= 0) return false;
                 return true;
             }
             catch
