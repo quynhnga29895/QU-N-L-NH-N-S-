@@ -5,10 +5,3 @@ C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.dll
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.pdb
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DAO.dll
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DAO.pdb
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.dll
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.pdb
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.dll
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.pdb
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache

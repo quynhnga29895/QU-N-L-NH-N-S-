@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,18 +40,8 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbThongBao = new System.Windows.Forms.Label();
-            this.cbBoxMaNV = new System.Windows.Forms.ComboBox();
-            this.qUANLYNHANSUDataSet1 = new QLNS.QUANLYNHANSUDataSet1();
-            this.tblTaiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblTaiKhoanTableAdapter = new QLNS.QUANLYNHANSUDataSet1TableAdapters.tblTaiKhoanTableAdapter();
-            this.qUANLYNHANSUDataSet2 = new QLNS.QUANLYNHANSUDataSet2();
-            this.tblNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblNhanVienTableAdapter = new QLNS.QUANLYNHANSUDataSet2TableAdapters.tblNhanVienTableAdapter();
+            this.dtTimeNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblTaiKhoanBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,16 +80,16 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(27, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.Size = new System.Drawing.Size(63, 15);
             this.label4.TabIndex = 3;
-            this.label4.Text = "MaNV";
+            this.label4.Text = "Ngày Sinh";
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.Location = new System.Drawing.Point(169, 48);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(203, 22);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(233, 22);
             this.txtTenDangNhap.TabIndex = 4;
             // 
             // txtMatKhau
@@ -108,7 +97,7 @@
             this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(169, 95);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(203, 22);
+            this.txtMatKhau.Size = new System.Drawing.Size(233, 22);
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -117,7 +106,7 @@
             this.txtNhapLaiPass.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNhapLaiPass.Location = new System.Drawing.Point(169, 141);
             this.txtNhapLaiPass.Name = "txtNhapLaiPass";
-            this.txtNhapLaiPass.Size = new System.Drawing.Size(203, 22);
+            this.txtNhapLaiPass.Size = new System.Drawing.Size(233, 22);
             this.txtNhapLaiPass.TabIndex = 6;
             this.txtNhapLaiPass.UseSystemPasswordChar = true;
             // 
@@ -130,7 +119,6 @@
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
@@ -156,8 +144,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.groupBox1.Controls.Add(this.cbBoxMaNV);
             this.groupBox1.Controls.Add(this.lbThongBao);
+            this.groupBox1.Controls.Add(this.dtTimeNgaySinh);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtTenDangNhap);
             this.groupBox1.Controls.Add(this.label2);
@@ -186,44 +174,13 @@
             this.lbThongBao.TabIndex = 8;
             this.lbThongBao.Text = ".";
             // 
-            // cbBoxMaNV
+            // dtTimeNgaySinh
             // 
-            this.cbBoxMaNV.DataSource = this.tblNhanVienBindingSource;
-            this.cbBoxMaNV.DisplayMember = "MaNV";
-            this.cbBoxMaNV.FormattingEnabled = true;
-            this.cbBoxMaNV.Location = new System.Drawing.Point(169, 185);
-            this.cbBoxMaNV.Name = "cbBoxMaNV";
-            this.cbBoxMaNV.Size = new System.Drawing.Size(203, 23);
-            this.cbBoxMaNV.TabIndex = 9;
-            this.cbBoxMaNV.ValueMember = "MaNV";
-            // 
-            // qUANLYNHANSUDataSet1
-            // 
-            this.qUANLYNHANSUDataSet1.DataSetName = "QUANLYNHANSUDataSet1";
-            this.qUANLYNHANSUDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblTaiKhoanBindingSource
-            // 
-            this.tblTaiKhoanBindingSource.DataMember = "tblTaiKhoan";
-            this.tblTaiKhoanBindingSource.DataSource = this.qUANLYNHANSUDataSet1;
-            // 
-            // tblTaiKhoanTableAdapter
-            // 
-            this.tblTaiKhoanTableAdapter.ClearBeforeFill = true;
-            // 
-            // qUANLYNHANSUDataSet2
-            // 
-            this.qUANLYNHANSUDataSet2.DataSetName = "QUANLYNHANSUDataSet2";
-            this.qUANLYNHANSUDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblNhanVienBindingSource
-            // 
-            this.tblNhanVienBindingSource.DataMember = "tblNhanVien";
-            this.tblNhanVienBindingSource.DataSource = this.qUANLYNHANSUDataSet2;
-            // 
-            // tblNhanVienTableAdapter
-            // 
-            this.tblNhanVienTableAdapter.ClearBeforeFill = true;
+            this.dtTimeNgaySinh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtTimeNgaySinh.Location = new System.Drawing.Point(169, 187);
+            this.dtTimeNgaySinh.Name = "dtTimeNgaySinh";
+            this.dtTimeNgaySinh.Size = new System.Drawing.Size(233, 22);
+            this.dtTimeNgaySinh.TabIndex = 7;
             // 
             // frmDangKy
             // 
@@ -238,13 +195,8 @@
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmDangKy";
             this.Text = "ĐĂNG KÝ TÀI KHOẢN";
-            this.Load += new System.EventHandler(this.frmDangKy_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblTaiKhoanBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNHANSUDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblNhanVienBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,13 +214,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dtTimeNgaySinh;
         private System.Windows.Forms.Label lbThongBao;
-        private System.Windows.Forms.ComboBox cbBoxMaNV;
-        private QUANLYNHANSUDataSet1 qUANLYNHANSUDataSet1;
-        private System.Windows.Forms.BindingSource tblTaiKhoanBindingSource;
-        private QUANLYNHANSUDataSet1TableAdapters.tblTaiKhoanTableAdapter tblTaiKhoanTableAdapter;
-        private QUANLYNHANSUDataSet2 qUANLYNHANSUDataSet2;
-        private System.Windows.Forms.BindingSource tblNhanVienBindingSource;
-        private QUANLYNHANSUDataSet2TableAdapters.tblNhanVienTableAdapter tblNhanVienTableAdapter;
     }
 }

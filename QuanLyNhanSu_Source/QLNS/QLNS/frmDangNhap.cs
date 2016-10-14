@@ -89,14 +89,10 @@ namespace QLNS
 
         private void linklable_dangky_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
+            frmDangNhap frm = new frmDangNhap();
+            frm.Close();
             frmDangKy frm1 = new frmDangKy();
             frm1.Show();
-        }
-
-        private void frmDangNhap_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
