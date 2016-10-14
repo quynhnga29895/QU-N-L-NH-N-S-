@@ -13,7 +13,7 @@ namespace DAO
         public static SqlConnection con;
         public static DataTable LoadDuLieu()
         {
-            string sTruyVan = "Select * from tblTaiKhoan";
+            string sTruyVan = "Select UserName from tblTaiKhoan";
             con = DataProvider.KetNoi();
             DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
             DataProvider.Close_KetNoi(con);
@@ -55,7 +55,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblKhenThuong values (UserName,Password,MaNV,MaPQ) values ('{0}','{1}','{2}',{3})", tk.UserName,tk.Password,tk.MaNV,tk.MaPQ);
+                string sTruyVan = string.Format(@"INSERT INTO tblTaiKhoan	(UserName, Password, MaNV,MaPQ)	VALUES('" + tk.UserName + "','" + tk.Password + "','" + tk.MaNV + "', '" + tk.MaPQ + "')");
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -65,5 +65,21 @@ namespace DAO
                 return false;
             }
         }
+        public static bool KiemTra(string Username)
+        {
+            try
+            {
+                con = DataProvider.KetNoi();
+                string sTruyVan = string.Format(@"Select Username from tblTaiKhoan	where Username = '{}'", Username);
+                DataTable tb = DataProvider.Get_DataTable(sTruyVan, con);
+                if (tb.Rows.Count < 0) return false;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }

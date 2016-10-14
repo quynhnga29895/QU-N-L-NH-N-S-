@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QUANLYNHANSUDataSet1" targetNamespace="http://tempuri.org/QUANLYNHANSUDataSet1.xsd" xmlns:mstns="http://tempuri.org/QUANLYNHANSUDataSet1.xsd" xmlns="http://tempuri.org/QUANLYNHANSUDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QUANLYNHANSUConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QUANLYNHANSUConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNS.Properties.Settings.GlobalReference.Default.QUANLYNHANSUConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblTaiKhoanTableAdapter" GeneratorDataComponentClassName="tblTaiKhoanTableAdapter" Name="tblTaiKhoan" UserDataComponentName="tblTaiKhoanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QUANLYNHANSUConnectionString (Settings)" DbObjectName="QUANLYNHANSU.dbo.tblTaiKhoan" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaNV FROM dbo.tblTaiKhoan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaNV" DataSetColumn="MaNV" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QUANLYNHANSUDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QUANLYNHANSUDataSet1" msprop:Generator_UserDSName="QUANLYNHANSUDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblTaiKhoan" msprop:Generator_TableClassName="tblTaiKhoanDataTable" msprop:Generator_TableVarName="tabletblTaiKhoan" msprop:Generator_TablePropName="tblTaiKhoan" msprop:Generator_RowDeletingName="tblTaiKhoanRowDeleting" msprop:Generator_RowChangingName="tblTaiKhoanRowChanging" msprop:Generator_RowEvHandlerName="tblTaiKhoanRowChangeEventHandler" msprop:Generator_RowDeletedName="tblTaiKhoanRowDeleted" msprop:Generator_UserTableName="tblTaiKhoan" msprop:Generator_RowChangedName="tblTaiKhoanRowChanged" msprop:Generator_RowEvArgName="tblTaiKhoanRowChangeEvent" msprop:Generator_RowClassName="tblTaiKhoanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaNV" msprop:Generator_ColumnVarNameInTable="columnMaNV" msprop:Generator_ColumnPropNameInRow="MaNV" msprop:Generator_ColumnPropNameInTable="MaNVColumn" msprop:Generator_UserColumnName="MaNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

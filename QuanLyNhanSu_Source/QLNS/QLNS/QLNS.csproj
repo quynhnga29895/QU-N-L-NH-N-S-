@@ -70,6 +70,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUANLYNHANSUDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QUANLYNHANSUDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYNHANSUDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYNHANSUDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYNHANSUDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmDangKy.resx">
       <DependentUpon>frmDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +118,28 @@
     <None Include="QUANLYNHANSUDataSet.xss">
       <DependentUpon>QUANLYNHANSUDataSet.xsd</DependentUpon>
     </None>
+    <None Include="QUANLYNHANSUDataSet1.xsc">
+      <DependentUpon>QUANLYNHANSUDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYNHANSUDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYNHANSUDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYNHANSUDataSet1.xss">
+      <DependentUpon>QUANLYNHANSUDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYNHANSUDataSet2.xsc">
+      <DependentUpon>QUANLYNHANSUDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYNHANSUDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYNHANSUDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYNHANSUDataSet2.xss">
+      <DependentUpon>QUANLYNHANSUDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -119,6 +151,10 @@
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{1c13a88b-dfd0-4a3c-aa54-e8cfa10c6bfd}</Project>
       <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{53d21214-6171-46aa-88c6-9383c242868d}</Project>
+      <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
