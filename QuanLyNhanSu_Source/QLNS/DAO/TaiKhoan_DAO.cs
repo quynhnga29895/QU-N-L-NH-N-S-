@@ -95,14 +95,14 @@ namespace DAO
                 return false;
             }
         }
-        public static bool DoiMatKhau(string user)
+        public static bool DoiMatKhau(string user,string pass)
         {
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Select UserName from tblTaiKhoan where UserName = '{0}'", user);
+                string sTruyVan = string.Format("Select UserName,Password from tblTaiKhoan where UserName = '{0}'and Password = '{1}'", user,pass);
                 DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
-                if (dt.Rows.Count <= 0) return false;
+                if (dt.Rows.Count < 0) return false;
                 return true;
             }
             catch

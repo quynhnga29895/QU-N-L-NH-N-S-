@@ -13,6 +13,14 @@ namespace QLNS
 {
     public partial class frmDoiMatKhau : Form
     {
+        public void SetNull()
+        {
+            txtuser.Text = "";
+            txtoldpass.Text = "";
+            txtnewpass.Text = "";
+            txtnhaplaipass.Text = "";
+            //lbNote.Text = "";
+        }
         public frmDoiMatKhau()
         {
             InitializeComponent();
@@ -25,9 +33,10 @@ namespace QLNS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (TaiKhoan_DAO.DoiMatKhau(txtuser.Text) == false)
+            if (TaiKhoan_DAO.DoiMatKhau(txtuser.Text,txtoldpass.Text) == false)
             {
-                lbNote.Text = "Tên Đăng Nhập Không Khớp!!!";
+                lbNote.Text = "Tên đăng nhập hoặc mật khẩu không đúng!!!";
+                SetNull();
                 return;
             }
             if(txtnewpass.Text!=txtnhaplaipass.Text)
@@ -50,12 +59,11 @@ namespace QLNS
         private void button2_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có muốn thoát","QUESTION",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            traloi = MessageBox.Show("Bạn có muốn thoát","Thông báo",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
             if(traloi==DialogResult.OK)
             {
                 Application.Restart();
             }
-
         }
     }
 }
