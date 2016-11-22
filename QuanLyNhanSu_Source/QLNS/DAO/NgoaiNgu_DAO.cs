@@ -26,7 +26,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Update tblChucVu set TenNN = '{0}' where MaNN = '{1}'", nn.TenNN,nn.MaNN);
+                string sTruyVan = string.Format("Update tblChucVu set TenNN = N'{0}' where MaNN = '{1}'", nn.TenNN,nn.MaNN);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -56,7 +56,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblNgoaiNgu values (MaNN, TenNN) values ('{0}','{1}')", nn.MaNN,nn.TenNN);
+                string sTruyVan = string.Format("Insert into tblNgoaiNgu values (MaNN, TenNN) values ('{0}',N'{1}')", nn.MaNN,nn.TenNN);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;

@@ -26,7 +26,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Update tblChiTietNgoaiNgu set MaNV = '{0}',ThoiGian = '{1}',trinhDo = '{2}' where MaNN = '{3}'", ctnn.MaNV,ctnn.ThoiGian,ctnn.TrinhDo,ctnn.MaNN);
+                string sTruyVan = string.Format("Update tblChiTietNgoaiNgu set MaNV = '{0}',ThoiGian = '{1}',TrinhDo = N'{2}' where MaNN = '{3}'", ctnn.MaNV,ctnn.ThoiGian,ctnn.TrinhDo,ctnn.MaNN);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -56,7 +56,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblChiTietNgoaiNgu values (MaNN,MaNV,ThoiGian,TrinhDo) values ('{0}','{1}','{2}','{3}')", ctnn.MaNN,ctnn.MaNV,ctnn.ThoiGian,ctnn.TrinhDo);
+                string sTruyVan = string.Format("Insert into tblChiTietNgoaiNgu values (MaNN,MaNV,ThoiGian,TrinhDo) values ('{0}','{1}','{2}',N'{3}')", ctnn.MaNN,ctnn.MaNV,ctnn.ThoiGian,ctnn.TrinhDo);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;

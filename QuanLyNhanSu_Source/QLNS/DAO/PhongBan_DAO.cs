@@ -25,7 +25,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblPhongBan(MaPB,TenPB) values ('{0}','{1}')",pb.MaPB,pb.TenPB);
+                string sTruyVan = string.Format(@"Insert into tblPhongBan (MaPB,TenPB,DiaDiem,SDT) values ('{0}',N'{1}',N'{2}','{3}')",pb.MaPB,pb.TenPB,pb.DiaDiem,pb.SDT);
                 DataProvider.ThucThiTruyVan(sTruyVan,con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -41,7 +41,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Update tblPhongBan set TenPB = '{0}',DiaDiem = '{1}',SDT = '{2}' where MaPB = '{4}'",pb.TenPB,pb.DiaDiem,pb.SDT,pb.MaPB);
+                string sTruyVan = string.Format(@"update tblPhongBan set TenPB = N'{0}', DiaDiem = N'{1}',SDT = '{2}' where MaPB = '{3}'", pb.TenPB, pb.DiaDiem, pb.SDT, pb.MaPB);
                 DataProvider.ThucThiTruyVan(sTruyVan,con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -56,7 +56,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Delete from tblPhongBan where MaPB = '{0}'",pb.MaPB);
+                string sTruyVan = string.Format(@"Delete from tblPhongBan where MaPB = '{0}'",pb.MaPB);
                 DataProvider.ThucThiTruyVan(sTruyVan,con);
                 DataProvider.Close_KetNoi(con);
                 return true;
