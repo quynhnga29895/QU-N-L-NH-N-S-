@@ -66,5 +66,52 @@ namespace DAO
                 return false;
             }
         }
+        public static DataTable LoadDSXoa()
+        {
+            string sTruyVan = "Select MaNV, HoTen, GioiTinh from tblNhanVien";
+            con = DataProvider.KetNoi();
+            DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
+            DataProvider.Close_KetNoi(con);
+            return dt;
+        }
+        public static DataTable LoadDSXoa(string dk)
+        {
+            string sTruyVan = "Select MaNV, HoTen, GioiTinh from tblNhanVien where " + dk;
+            con = DataProvider.KetNoi();
+            DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
+            DataProvider.Close_KetNoi(con);
+            return dt;
+        }
+        public static bool XoaNV(NhanVien_DTO nv)
+        {
+            try
+            {
+                con = DataProvider.KetNoi();
+                string sTruyVan;
+                //xoa cac thanh phan phu thuoc
+                //bang phieu luong
+                sTruyVan = string.Format("Delete from tblPhieuLuong where MaNV = '{0}'", nv.MaNV);
+                DataProvider.ThucThiTruyVan(sTruyVan, con);
+                //bang chi tiet ngoai ngu
+                sTruyVan = string.Format("Delete from tblChiTietNgoaiNgu where MaNV = '{0}'", nv.MaNV);
+                DataProvider.ThucThiTruyVan(sTruyVan, con);
+                //bang ChiTietKhienThuong
+                sTruyVan = string.Format("Delete from tblChiTietKhenThuong where MaNV = '{0}'", nv.MaNV);
+                DataProvider.ThucThiTruyVan(sTruyVan, con);
+                //xoa HopDong
+                sTruyVan = string.Format("Delete from tblChiTietHopDong where MaNV = '{0}'", nv.MaNV);
+                DataProvider.ThucThiTruyVan(sTruyVan, con);
+                //xoa nv
+                sTruyVan = string.Format("Delete from tblNhanVien where MaNV = '{0}'", nv.MaNV);
+                DataProvider.ThucThiTruyVan(sTruyVan, con);
+
+                DataProvider.Close_KetNoi(con);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
