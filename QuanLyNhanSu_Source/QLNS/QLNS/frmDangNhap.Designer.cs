@@ -37,7 +37,6 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.lbThongBao = new System.Windows.Forms.Label();
-            this.lkLabelQuenPass = new System.Windows.Forms.LinkLabel();
             this.lnkLabel_DangKy = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -133,26 +132,16 @@
             this.lbThongBao.TabIndex = 8;
             this.lbThongBao.Text = ".";
             // 
-            // lkLabelQuenPass
-            // 
-            this.lkLabelQuenPass.AutoSize = true;
-            this.lkLabelQuenPass.Location = new System.Drawing.Point(98, 206);
-            this.lkLabelQuenPass.Name = "lkLabelQuenPass";
-            this.lkLabelQuenPass.Size = new System.Drawing.Size(80, 13);
-            this.lkLabelQuenPass.TabIndex = 9;
-            this.lkLabelQuenPass.TabStop = true;
-            this.lkLabelQuenPass.Text = "Quên mật khẩu";
-            this.lkLabelQuenPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkLabelQuenPass_LinkClicked);
-            // 
             // lnkLabel_DangKy
             // 
             this.lnkLabel_DangKy.AutoSize = true;
-            this.lnkLabel_DangKy.Location = new System.Drawing.Point(224, 206);
+            this.lnkLabel_DangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkLabel_DangKy.Location = new System.Drawing.Point(131, 203);
             this.lnkLabel_DangKy.Name = "lnkLabel_DangKy";
-            this.lnkLabel_DangKy.Size = new System.Drawing.Size(47, 13);
+            this.lnkLabel_DangKy.Size = new System.Drawing.Size(114, 16);
             this.lnkLabel_DangKy.TabIndex = 10;
             this.lnkLabel_DangKy.TabStop = true;
-            this.lnkLabel_DangKy.Text = "Đăng ký";
+            this.lnkLabel_DangKy.Text = "Đăng ký tài khoản";
             this.lnkLabel_DangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // frmDangNhap
@@ -162,7 +151,6 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(387, 287);
             this.Controls.Add(this.lnkLabel_DangKy);
-            this.Controls.Add(this.lkLabelQuenPass);
             this.Controls.Add(this.lbThongBao);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtUser);
@@ -192,7 +180,6 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Label lbThongBao;
-        private System.Windows.Forms.LinkLabel lkLabelQuenPass;
         private System.Windows.Forms.LinkLabel lnkLabel_DangKy;
     }
 }

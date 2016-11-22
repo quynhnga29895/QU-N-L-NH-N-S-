@@ -49,7 +49,7 @@ namespace QLNS
                 TaiKhoan_DTO tk = new TaiKhoan_DTO();
                 tk.UserName = txtuser.Text;
                 tk.Password = txtnewpass.Text;
-                TaiKhoan_DAO.Sua(tk);
+                TaiKhoan_DAO.SuaNV(tk);
                 MessageBox.Show("Thay đổi thành công!!!");
                 this.Hide();
                 Application.Restart();

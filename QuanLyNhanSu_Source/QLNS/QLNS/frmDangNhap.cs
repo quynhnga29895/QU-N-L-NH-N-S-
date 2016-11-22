@@ -11,8 +11,10 @@ using DAO;
 using DTO;
 namespace QLNS
 {
+    
     public partial class frmDangNhap : Form
     {
+        public static string UserName = "";
         public frmDangNhap()
         {
             InitializeComponent();
@@ -62,6 +64,7 @@ namespace QLNS
             else
             {
                 this.Hide();
+                frmMain.UserName = txtUser.Text;
                 frmMain main = new frmMain();
                 main.Show();
             }
@@ -73,13 +76,6 @@ namespace QLNS
             {
                 btnOK_Click(null, null);
             }
-        }
-
-        private void lkLabelQuenPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            frmDoiMatKhau frm = new frmDoiMatKhau();
-            frm.Show();
         }
     }
 }
