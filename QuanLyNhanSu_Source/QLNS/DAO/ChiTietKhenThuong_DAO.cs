@@ -20,29 +20,13 @@ namespace DAO
             DataProvider.Close_KetNoi(con);
             return dt;
         }
-        public static DataTable LoadDuLieu(string dk)
-        {
-            string sTruyVan = "Select * from tblChiTietKhenThuong "+dk;
-            con = DataProvider.KetNoi();
-            DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
-            DataProvider.Close_KetNoi(con);
-            return dt;
-        }
-        public static DataTable LoadDuLieuChiTiet()
-        {
-            string sTruyVan = @"select MaKT, n.MaNV, HoTen, NgayKhenThuong, TienKhenThuong, c.GhiChu from tblChiTietKhenThuong c, tblNhanVien n where c.MaNV = n.MaNV";
-            con = DataProvider.KetNoi();
-            DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
-            DataProvider.Close_KetNoi(con);
-            return dt;
-        }
 
         public static bool Sua(ChiTietKhenThuong_DTO ctkt)
         {
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Update tblChiTietKhenThuong set MaNV = '{0}', NgayKhenThuong = '{1}',TienKhenThuong = '{2}' where MaKT = '{3}'",ctkt.MaNV,ctkt.NgayKhenThuong.ToShortDateString(),ctkt.TienKT,ctkt.MaKT);
+                string sTruyVan = string.Format("Update tblChiTietKhenThuong set MaNV = '{0}', NgayKhenThuong = '{1}',TienKhenThuong = '{2}' where MaKT = '{3}'",ctkt.MaNV,ctkt.NgayKhenThuong,ctkt.TienKT,ctkt.MaKT);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;
@@ -72,7 +56,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblChiTietKhenThuong (MaKT,MaNV,NgayKhenThuong,TienKhenThuong) values ('{0}','{1}','{2}','{3}')", ctkt.MaKT,ctkt.MaNV,ctkt.NgayKhenThuong.ToShortDateString(),ctkt.TienKT);
+                string sTruyVan = string.Format("Insert into tblChiTietKhenThuong values (MaKT,MaNV,NgayKhenThuong,TienKhenThuong) values ('{0}','{1}','{2}','{3}',)", ctkt.MaKT,ctkt.MaNV,ctkt.NgayKhenThuong,ctkt.TienKT);
                 DataProvider.ThucThiTruyVan(sTruyVan, con);
                 DataProvider.Close_KetNoi(con);
                 return true;

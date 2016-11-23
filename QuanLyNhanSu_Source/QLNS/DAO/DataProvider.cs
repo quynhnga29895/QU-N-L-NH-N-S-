@@ -12,7 +12,7 @@ namespace DAO
     {
         public static SqlConnection KetNoi()
         {
-            string ChuoiKetNoi = @"Data Source=PVC_IT-PC\PVC_IT;Initial Catalog=QUANLYNHANSU;Integrated Security=True";
+            string ChuoiKetNoi = @"Data Source=.\SQLEXPRESS;Initial Catalog=QUANLYNHANSU;Integrated Security=True";
             SqlConnection con = new SqlConnection(ChuoiKetNoi);
             con.Open();
             return con;
@@ -25,9 +25,7 @@ namespace DAO
         {
             SqlDataAdapter sda = new SqlDataAdapter(sTruyVan,con);
             DataTable dt = new DataTable();
-            try
-                {sda.Fill(dt);}
-            catch { return null; }
+            sda.Fill(dt);
             return dt;
         }
         public static void ThucThiTruyVan(string sTruyVan, SqlConnection con)
