@@ -129,11 +129,5 @@ namespace QLNS
             txtTrinhDo.DataBindings.Clear();
             txtTrinhDo.DataBindings.Add("Text", trinhdo, "TrinhDo", true);
         }
-
-        
-
-        
-
-       
     }
 }

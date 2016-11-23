@@ -9,6 +9,8 @@ C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin
 C:\Users\Admin\Documents\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DTO.pdb
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DTO.dll
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DTO.pdb
-D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\obj\Debug\DTO.dll
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\obj\Debug\DTO.pdb
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DAO.dll
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\bin\Debug\DAO.pdb
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

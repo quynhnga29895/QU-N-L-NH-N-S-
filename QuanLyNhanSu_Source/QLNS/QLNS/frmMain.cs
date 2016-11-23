@@ -57,7 +57,7 @@ namespace QLNS
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNhanVien nv = new frmNhanVien();
+            frmQuanLyNhanSu nv = new frmQuanLyNhanSu();
             nv.Show(); 
         }
 
@@ -75,7 +75,7 @@ namespace QLNS
 
         private void toolStripButtonNV_Click(object sender, EventArgs e)
         {
-            frmNhanVien nv = new frmNhanVien();
+            frmQuanLyNhanSu nv = new frmQuanLyNhanSu();
             nv.Show();
         }
 
@@ -90,6 +90,18 @@ namespace QLNS
             {
                 MessageBox.Show("Bạn không được quyền truy cập vào đây!!!","Thông Báo",MessageBoxButtons.OK);
             }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            frmKhenThuong khenthuong = new frmKhenThuong();
+            khenthuong.Show();
+        }
+
+        private void khenThưởngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmKhenThuong khenthuong = new frmKhenThuong();
+            khenthuong.Show();
         }
 
     }
