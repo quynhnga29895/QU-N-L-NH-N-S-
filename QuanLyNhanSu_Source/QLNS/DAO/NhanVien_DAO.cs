@@ -56,7 +56,7 @@ namespace DAO
             try
             {
                 con = DataProvider.KetNoi();
-                string sTruyVan = string.Format("Insert into tblNhanVien values (MaNV,HoTen,MaPB,MaChucVu,MaChuyenMon) values ('{0}',N'{1}','{2}','{3}','{4}')",nv.MaNV,nv.HoTen,nv.MaPB,nv.MaChucVu,nv.MaChuyenMon);
+                string sTruyVan = string.Format("Insert into tblNhanVien (MaNV,HoTen,GioiTinh,NgaySinh,DiaChi,MaPB,MaChucVu,MaChuyenMon,GhiChu) values (N'{0}',N'{1}',N'{2}',N'{3}',N'{4}',N'{5}',N'{6}',N'{7}',N'{8}')", nv.MaNV, nv.HoTen, nv.GioiTinh, nv.NgaySinh, nv.DiaChi, nv.MaPB, nv.MaChucVu, nv.MaChuyenMon, nv.GhiChu);                
                 DataProvider.ThucThiTruyVan(sTruyVan,con);
                 DataProvider.Close_KetNoi(con);
                 return true;
