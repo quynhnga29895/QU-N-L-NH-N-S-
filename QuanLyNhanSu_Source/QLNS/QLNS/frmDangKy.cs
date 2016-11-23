@@ -65,7 +65,7 @@ namespace QLNS
             tk.UserName = txtTenDangNhap.Text;
             tk.Password = txtMatKhau.Text;
             tk.MaNV = cbMaNV.SelectedValue.ToString();
-            tk.MaPQ = "1";
+            tk.MaPQ = "2";
             TaiKhoan_DAO.Them(tk);
             MessageBox.Show("Chúc mừng bạn đã đăng ký thành công !!!");
             this.Close();
