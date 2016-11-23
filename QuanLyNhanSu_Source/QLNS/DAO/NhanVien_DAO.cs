@@ -20,6 +20,14 @@ namespace DAO
             DataProvider.Close_KetNoi(con);
             return dt;
         }
+        public static DataTable LoadDuLieu(string dk)
+        {
+            string sTruyVan = "Select * from tblNhanVien "+ dk;
+            con = DataProvider.KetNoi();
+            DataTable dt = DataProvider.Get_DataTable(sTruyVan, con);
+            DataProvider.Close_KetNoi(con);
+            return dt;
+        }
 
         public static bool Sua(NhanVien_DTO nv)
         {
