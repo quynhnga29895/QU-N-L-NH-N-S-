@@ -110,5 +110,11 @@ namespace QLNS
             tk.Show();
         }
 
+        private void trợGiúpToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmHuongDan fr = new frmHuongDan();
+            fr.Show();
+        }
+
     }
 }
