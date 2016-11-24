@@ -124,21 +124,21 @@
             // phòngBanToolStripMenuItem
             // 
             this.phòngBanToolStripMenuItem.Name = "phòngBanToolStripMenuItem";
-            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.phòngBanToolStripMenuItem.Text = "Phòng Ban";
             this.phòngBanToolStripMenuItem.Click += new System.EventHandler(this.phòngBanToolStripMenuItem_Click);
             // 
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
             this.nhânViênToolStripMenuItem.Click += new System.EventHandler(this.nhânViênToolStripMenuItem_Click);
             // 
             // khenThưởngToolStripMenuItem
             // 
             this.khenThưởngToolStripMenuItem.Name = "khenThưởngToolStripMenuItem";
-            this.khenThưởngToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.khenThưởngToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.khenThưởngToolStripMenuItem.Text = "Khen Thưởng";
             this.khenThưởngToolStripMenuItem.Click += new System.EventHandler(this.khenThưởngToolStripMenuItem_Click);
             // 
@@ -147,8 +147,9 @@
             this.trợGiúpToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.trợGiúpToolStripMenuItem3});
             this.trợGiúpToolStripMenuItem2.Name = "trợGiúpToolStripMenuItem2";
-            this.trợGiúpToolStripMenuItem2.Size = new System.Drawing.Size(63, 20);
+            this.trợGiúpToolStripMenuItem2.Size = new System.Drawing.Size(64, 20);
             this.trợGiúpToolStripMenuItem2.Text = "Trợ giúp";
+            this.trợGiúpToolStripMenuItem2.Click += new System.EventHandler(this.trợGiúpToolStripMenuItem2_Click);
             // 
             // trợGiúpToolStripMenuItem3
             // 

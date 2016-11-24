@@ -12,3 +12,10 @@ D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.pdb
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.dll
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.pdb
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DAO.dll
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DAO.pdb
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.dll
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\bin\Debug\DTO.pdb
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.dll
+D:\GitHubLocal\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\DAO\obj\Debug\DAO.pdb
