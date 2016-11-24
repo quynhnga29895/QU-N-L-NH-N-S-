@@ -8,8 +8,8 @@ namespace DTO
 {
     public class PhanQuyen_DTO
     {
-        private string _maPQ;
-        public string MaChuyenMon
+        private int _maPQ;
+        public int MaPQ
         {
             get { return _maPQ; }
             set { _maPQ = value; }

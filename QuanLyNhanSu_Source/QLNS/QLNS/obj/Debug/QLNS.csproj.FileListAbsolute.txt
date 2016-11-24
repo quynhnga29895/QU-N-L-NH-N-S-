@@ -40,3 +40,9 @@ D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\bin\Debug\DTO.pdb
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.exe
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.pdb
 D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmDoiMatKhau.resources
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmPhongBan.resources
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmNguoiDung.resources
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmXoaNhanVien.resources
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmKhenThuong.resources
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmQuanLyNhanSu.resources
+D:\GitHub\QUAN-LY-NHAN-SU\QuanLyNhanSu_Source\QLNS\QLNS\obj\Debug\QLNS.frmTimKiem.resources
